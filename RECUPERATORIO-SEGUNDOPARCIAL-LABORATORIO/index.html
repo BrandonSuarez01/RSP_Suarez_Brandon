@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <title>Segundo Parcial</title>
+</head>
+
+<body>
+    <div id="pagina">
+
+        <form class="form-datos">
+            <h1>Form Datos</h1>
+            <div class="filter">
+                <label for="selection">Filtrar por:</label>
+                <select name="selection" id="select-filtro">
+                    <option value="todos">Todos</option>
+                    <option value="aereo">Aereo</option>
+                    <option value="terrestre">Terrestre</option>
+                </select>
+            </div>
+            <div class="promedio-vel">
+                <label for="calculate">Promedio Velocidad Maxima:</label>
+                <input type="text" name="calculate" id="text-promedio">
+                <button type="submit" id="calcular-prom">Calcular</button>
+            </div>
+            <br>
+            <div class="table-container">
+                <label for="checkboxes">Mostrar Columnas: </label>
+                <div class="checkboxes">
+                    <label for="id">Id:</label>
+                    <input type="checkbox" name="" id="id" data-column="0" checked="true">
+                    <label for="name">-Modelo:</label>
+                    <input type="checkbox" name="" id="modelo" data-column="1" checked="true">
+                    <label for="surname">-Año Fab:</label>
+                    <input type="checkbox" name="" id="anioFab" data-column="2" checked="true">
+                    <label for="age">-Vel Max:</label>
+                    <input type="checkbox" name="" id="velMax" data-column="3" checked="true">
+                    <label for="salary">-Cant Pue:</label>
+                    <input type="checkbox" name="" id="cantPue" data-column="4" checked="true">
+                    <label for="sales">-Cant Rue:</label>
+                    <input type="checkbox" name="" id="cantRue" data-column="5" checked="true">
+                    <label for="shopping">-Alt Max:</label>
+                    <input type="checkbox" name="" id="altMax" data-column="6" checked="true">
+                    <label for="phone">-Autonomia:</label>
+                    <input type="checkbox" name="" id="autonomia" data-column="7" checked="true">
+                </div>
+                <br>
+                <div class="table" id="table"></div>
+                <button id='btnAgregar'>Agregar</button>
+            </div>
+        </form>
+    
+        <div class="abm-container" id="abm-container" tabindex="1">
+            <h1>Formulario ABM</h1>
+            <form class="form-abm">
+                <label for="">Id:</label>
+                <input type="number" name="inputId" id="input-id" readonly>
+                <label for="">Modelo:</label>
+                <input type="text" name="inputModelo" id="input-modelo">
+                <label for="">Año Fabricacion:</label>
+                <input type="text" name="inputFab" id="input-fab">
+                <label for="">Velocidad Maxima:</label>
+                <input type="text" name="inputVel" id="input-vel">
+                <label for="">Tipo:</label>
+                <select name="selectTipo" id="select-tipo">
+                    <option value="default">Tipo</option>
+                    <option value="aereo">Aereo</option>
+                    <option value="terrestre">Terrestre</option>
+                </select>
+                <div id="inpustsAereo">
+                    <label for="">Altura Maxima:</label>
+                    <input type="text" name="inputAlt" id="input-alt">
+                    <label for="">Autonomia:</label>
+                    <input type="text" name="inputAutono" id="inpunt-auto">
+                </div>
+                <div id="inputsTerres">
+                    <label for="inputPue">Cantidad Puertas:</label>
+                    <input type="text" name="inputPue" id="input-cantPue">
+                    <label for="inputRue">Cantidad Ruedas:</label>
+                    <input type="text" name="inputRue" id="input-cantRue">
+                </div>
+                <button id="btnConfirmar">Agregar</button>
+                <button id="btnModificar">Modificar</button>
+                <button id="btnEliminar">Eliminar</button>
+
+                <button id="btnCancelar">Cancelar</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="overlay-container" id="overlay">
+        <div class="spinner"></div>
+    </div>
+
+</body>
+<script type="module" src="./js/app.js"></script>
+</html>

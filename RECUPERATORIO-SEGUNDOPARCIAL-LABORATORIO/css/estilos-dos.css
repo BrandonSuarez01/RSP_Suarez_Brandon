@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.form-datos, .abm-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter, .promedio-vel, .table-container, .abm-container {
+    margin-bottom: 20px;
+}
+
+.filter label, .promedio-vel label {
+    margin-right: 10px;
+}
+
+.filter select, .promedio-vel input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+}
+
+.filter select {
+    width: 200px;
+}
+
+.checkboxes label {
+    margin-right: 10px;
+}
+
+.table-container label {
+    font-weight: bold;
+}
+
+.table {
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table th, .table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+.table th {
+    background-color: #f0f0f0;
+}
+
+.abm-container {
+    text-align: center;
+}
+
+.abm-container h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.form-abm {
+    max-width: 400px; 
+    margin: 0 auto; 
+    padding: 20px;
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-abm label, .form-abm input, .form-abm select {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.form-abm button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.checkboxes label {
+    font-size: 14px; 
+    margin-right: 5px; 
+}
+
+.checkboxes input[type="checkbox"] {
+    transform: scale(0.8); /* Reducir el tamaño del checkbox */
+    margin-top: 2px;
+    margin-right: 3px; 
+}
